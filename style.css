@@ -17,6 +17,16 @@
 body {
 	background-color: #0B223D;
 	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .1rem;
+}
+
+hr {
+	background-color: #F39C14;
+	border: none;
+	width: 70px;
+	height: 3px;
+	margin: 0 auto;
 }
 
 /* Links */
@@ -24,12 +34,20 @@ body {
 a {
 	color: #F39C14;
 	text-decoration: none;
-	font-family: sans-serif;
+	border-color: #F39C14;
 }
 
 a:hover {
 	color: #fff;
+	border-color: #fff;
 	cursor: pointer;
+	transition: .4s;
+}
+
+a:active {
+	color: #01471C;
+	border-color: #01471C;
+	transition: 0s;
 }
 
 /* Nav Bar */
@@ -66,10 +84,24 @@ div.slogan {
   text-align: center;
 }
 
-div.slogan h1 {
-	font-size: 4rem;
-	margin-bottom: 30px;
+div.slogan span {
+	font-family: 'Vollkorn', serif;
+	letter-spacing: .5rem;
+	font-size: 5rem;
 	text-transform: uppercase;
+	text-shadow: 2px 2px 5px #0B223D;
+	color: #F39C14;
+}
+
+div.slogan span:hover {
+	text-shadow: 2px 2px 5px #F39C14;
+}
+
+div.slogan h1 {
+	font-size: 2rem;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-family: 'Vollkorn', serif;
 }
 
 .call-to-action {
@@ -84,6 +116,14 @@ div.slogan h1 {
 .about-bar {
 	text-align: center;
 	background-color: #01471C;
+}
+
+.about-bar > h2 {
+	padding: 8px;
+}
+
+.about-bar > p {
+	padding: 30px 19%;
 }
 
 /* Flexbox Gallery */
@@ -105,4 +145,11 @@ div.slogan h1 {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.tour-img > img {
+	width: 200px;
+	height: 150px;
 }
