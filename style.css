@@ -10,6 +10,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-align: center;
 }
 
 /* Global Styles */
@@ -21,10 +22,23 @@ body {
 	letter-spacing: .1rem;
 }
 
+h2 {
+	text-align: center;
+	padding: 8px;
+}
+
 hr {
 	background-color: #F39C14;
 	border: none;
 	width: 70px;
+	height: 3px;
+	margin: 0 auto;
+}
+
+hr.green {
+	background-color: #01471C;
+	border: none;
+	width: 100px;
 	height: 3px;
 	margin: 0 auto;
 }
@@ -118,15 +132,11 @@ div.slogan h1 {
 	background-color: #01471C;
 }
 
-.about-bar > h2 {
-	padding: 8px;
-}
-
 .about-bar > p {
 	padding: 30px 19%;
 }
 
-/* Flexbox Gallery */
+/* Touring Styles (Flexbox) */
 
 .tour-wrapper {
   margin: 15px;
@@ -147,9 +157,64 @@ div.slogan h1 {
   flex: 1;
   align-items: center;
   text-align: center;
+  padding: 15px;
+}
+
+#touring > h2 {
+	margin-top: 15px;
 }
 
 .tour-img > img {
-	width: 200px;
-	height: 150px;
+	max-width: 350px;
+	min-height: 225px;
+	border: solid #F39C14 3px;
+	border-radius: 10px;
+	margin: 20px;
+}
+
+.column h3 {
+	padding-bottom: 15px;
+}
+
+.column p {
+	padding-top: 15px;
+}
+
+.back-to-top {
+	margin: 25px auto;
+}
+
+/* Footer Styles */
+
+.copyright {
+	background-color: #F39C14;
+	text-align: center;
+}
+
+.copyright > p {
+	margin: auto;
+	padding: 40px;
+	color: #01471C;
+	font-weight: bold;
+	font-size: .8rem;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media only screen and (min-width: 610px) {
+	.tour-img > img {
+		min-width: 300px;
+	}
+
+	.column p {
+		margin: 0 15%;
+	}
+} 
+
+/* Desktop */
+@media only screen and (min-width: 887px) {
+	.column p {
+		margin: 0 auto;
+	}
 }
